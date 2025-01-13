@@ -1,0 +1,34 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+	.heading h1{
+		font-size: 44px;
+	}
+	.heading p{
+		font-size: 26px;
+	}
+	.cd-headline.clip span{
+		font-size: 28px;
+	}
+}
+@media (max-width: 767px) {
+	.heading h1{
+		font-size: 36px;
+	}
+	.heading p{
+		font-size: 20px;
+	}
+	.cd-headline.clip span{
+		font-size: 24px;
+	}
+}
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+	.heading h1{
+		font-size: 28px;
+	}
+	.heading p{
+		font-size: 14px;
+	}
+	.cd-headline.clip span{
+		font-size: 20px;
+	}
+}
