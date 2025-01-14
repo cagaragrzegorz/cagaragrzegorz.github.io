@@ -8,9 +8,9 @@ $(window).scroll(function () {
     var targetBot = target + $(this).height(); // + its height
 
     var id = $(this).attr("id");
-    $("nav a[data-id=" + id + "]").removeClass("active"); //clear all
+    $(".topnav a[data-id=" + id + "]").removeClass("active"); //clear all
     if (position >= target && targetBot >= position) {
-      $("nav a[data-id=" + id + "]").addClass("active"); //activate menu item of section I am scrolling over
+      $(".topnav a[data-id=" + id + "]").addClass("active"); //activate menu item of section I am scrolling over
     }
   });
 });
@@ -20,11 +20,17 @@ $(window).scroll(function () {
   var position = $(this).scrollTop(); //position scrolled so far
 
   if (position > 100) {
-    $(".navbar").addClass("navbar-shrink");
     $(".dmtop").addClass("show");
-
   } else {
-    $(".navbar").removeClass("navbar-shrink");
     $(".dmtop").removeClass("show");
   }
 });
+
+function addResponsiveClass() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav text-uppercase fixed-top") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav text-uppercase fixed-top";
+  }
+}
