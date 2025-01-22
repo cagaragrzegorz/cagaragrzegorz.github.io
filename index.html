@@ -26,14 +26,18 @@
     <script src="js/headline.js"></script>
     <script src="js/custom.js"></script>
 
-    <div class="topnav text-uppercase fixed-top" id="myTopnav">
+    <div id="myTopnav" class="topnav text-uppercase fixed-top">
         <div class="container">
-            <a data-id="home" href="#home" onclick="addResponsiveClass()" class="active">Home</a>
-            <a data-id="about" href="#about" onclick="addResponsiveClass()">About</a>
-            <a data-id="contact" href="#contact" onclick="addResponsiveClass()">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="addResponsiveClass()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <div class="row burger">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="row menu">
+                <a data-id="home" href="#home" onclick="toggleMenu()" class="active">Home</a>
+                <a data-id="about" href="#about" onclick="toggleMenu()">About</a>
+                <a data-id="contact" href="#contact" onclick="toggleMenu()">Contact</a>
+            </div>
         </div>
     </div>
 
@@ -95,19 +99,24 @@
 
     <div id="contact" class="navSection section lb">
         <div class="container">
-            <h3>Contact</h3>
-            <p>
-                Email: grzgorzcagara@gmail.com<br />
-                LI:
-                <a href="https://www.linkedin.com/in/grzegorz-cagara/">https://www.linkedin.com/in/grzegorz-cagara/</a>
-            </p>
+            <div class="row">
+                <h3>Contact</h3>
+                <p>
+                    Email: grzgorzcagara@gmail.com<br />
+                    LI:
+                    <a
+                        href="https://www.linkedin.com/in/grzegorz-cagara/">https://www.linkedin.com/in/grzegorz-cagara/</a>
+                </p>
+            </div>
         </div>
     </div>
 
     <div class="copyrights">
         <div class="container">
-            <div class="footer-distributed">
-                <p>All Rights Reserved. &copy; 2024 Grzegorz Cagara.</p>
+            <div class="row">
+                <div class="footer-distributed">
+                    <p>All Rights Reserved. &copy; 2024 Grzegorz Cagara.</p>
+                </div>
             </div>
         </div>
     </div>

@@ -26,10 +26,10 @@ $(window).scroll(function () {
   }
 });
 
-function addResponsiveClass() {
+function toggleMenu() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav text-uppercase fixed-top") {
-    x.className += " responsive";
+    x.className += " showMenu";
   } else {
     x.className = "topnav text-uppercase fixed-top";
   }
