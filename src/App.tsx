@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import { Col } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css";
 import "./css/responsive.css";
@@ -11,45 +13,28 @@ import { faAngleUp, faBars } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
 
-  const [menuClasses, setMenuClasses] = useState<string>("topnav text-uppercase fixed-top")
-
-  const toggleMenu = () => {
-
-    if (menuClasses === "topnav text-uppercase fixed-top") {
-      setMenuClasses('topnav text-uppercase fixed-top showMenu')
-    } else {
-      setMenuClasses('topnav text-uppercase fixed-top')
-    }
-  }
-  
   return (
     <div className="App">
-      <div id="myTopnav" className={menuClasses}>
-        <div className="container">
-          <div className="row burger">
-            <a className="icon" onClick={toggleMenu}>
-              <FontAwesomeIcon icon={faBars} />
-            </a>
-          </div>
-          <div className="row menu">
-            <a data-id="home" href="#home" className="active" onClick={toggleMenu}>
-              Home
-            </a>
-            <a data-id="about" href="#about" onClick={toggleMenu}>
-              About
-            </a>
-            <a data-id="contact" href="#contact" onClick={toggleMenu}>
-              Contact
-            </a>
-          </div>
-        </div>
-      </div>
+      <Navbar collapseOnSelect expand="lg" data-bs-theme="dark" style={{backgroundColor: '#333333'}} fixed="top">
+        <Container>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{border: '0', boxShadow: 'none'}} >
+          <FontAwesomeIcon icon={faBars} style={{color: 'white'}}/>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home" data-id={'home'} className="active">HOME</Nav.Link>
+              <Nav.Link href="#about" data-id={'about'}>ABOUT</Nav.Link>
+              <Nav.Link href="#contact" data-id={'contact'}>CONTACT</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       <section id="home" className="main-banner navSection">
         <div className="heading">
           <h1>hello i'm Grzegorz</h1>
           <h3 className="cd-headline clip">
-            <span>I specialize in: </span>
+            <span>I specialize in:&nbsp;</span>
             <span className="cd-words-wrapper">
               <b className="is-visible">FE Testing</b>
               <b>BE Testing</b>

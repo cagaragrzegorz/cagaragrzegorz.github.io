@@ -9,9 +9,9 @@ $(window).on("scroll", function () {
     var targetBot = target + $(this).height()!; // + its height
 
     var id = $(this).attr("id");
-    $(".topnav a[data-id=" + id + "]").removeClass("active"); //clear all
+    $(".nav-link[data-id=" + id + "]").removeClass("active"); //clear all
     if (position >= target && targetBot >= position) {
-      $(".topnav a[data-id=" + id + "]").addClass("active"); //activate menu item of section I am scrolling over
+      $(".nav-link[data-id=" + id + "]").addClass("active"); //activate menu item of section I am scrolling over
     }
   });
 });

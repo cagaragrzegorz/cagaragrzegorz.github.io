@@ -14,36 +14,21 @@ body {
 }
 
 /* header */
-
-.topnav {
-    background-color: #333333;
-    font-size: 14px;
-}
-
-.topnav .menu {
-    padding: 0px 10px;
-}
-
-.topnav .menu a {
+.nav-link {
     float: left;
     display: block;
-    /* background-color: #333333; */
-    text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     color: #ffffff;
     letter-spacing: 1px;
-    font-size: 14px;
     position: relative;
-    width: auto;
 }
 
-.topnav .menu a.active {
+.nav-link.active {
     color: white;
     font-weight: 600;
 }
 
-.topnav .menu a::after {
+.nav-link::after {
     content: "";
     width: 0;
     height: 3px;
@@ -61,62 +46,13 @@ body {
     margin-bottom: 10px;
 }
 
-.topnav .menu a.active::after {
+.nav-link.active::after {
     width: 50%;
 }
 
-.topnav .burger .icon {
-    display: none;
-}
-
 @media screen and (max-width: 600px) {
-    .topnav .menu {
-        padding: 0px 10px;
-    }
-
-    .topnav .burger {
-        padding: 12px 16px;
-    }
-
-    .topnav .menu a {
-        float: none;
-        display: block;
-        text-align: left;
-        position: relative;
-        overflow: hidden;
-        top: -200px;
-        width: 100%;
-    }
-
-    .topnav.showMenu .menu a {
-        float: none;
-        display: block;
-        text-align: left;
-        position: relative;
-        overflow: hidden;
-        top: 0px;
-        width: 100%;
-    }
-
-    .topnav .menu{
-        height: 0px;
-
-    }
-    .topnav.showMenu .menu{
-        height: auto;
-
-    }
-
-    .topnav .menu a.active::after {
+    .nav-link.active::after {
         width: 0%;
-    }
-
-    .topnav .burger a.icon {
-        right: 0;
-        display: block;
-        font-size: 20px;
-        color: white;
-        /* padding: 10px 26px; */
     }
 }
 
