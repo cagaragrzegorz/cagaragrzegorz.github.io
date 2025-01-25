@@ -33,7 +33,7 @@ export const AboutMe: React.FC = () => {
                     </p>
                     <p>I have been mentoring and teaching many testers along my career (mainly in English).</p>
                 </Col>
-                <Col md={6} sm={12} className="text-center">
+                <Col md={6} sm={12} className="image-container">
                     <img src={require('../images/ja.png')} alt="Grzegorz Cagara" />
                 </Col>
             </Row>
