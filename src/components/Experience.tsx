@@ -17,8 +17,9 @@ export const Experience: React.FC = () => {
                                 <h6>Principal Quality Engineer</h6>
                                 <p>
                                     Shoprunner was acquired by Fedex Dataworks. Building E2E testing framework form
-                                    scratch (Playwright + TS). SDK tests. Recruitment and building QA team. Teaching and mentoring
-                                    other testers. Building helpers and Website for project metrics and utilities.
+                                    scratch (Playwright + TS). SDK tests. Recruitment and building QA team. Teaching and
+                                    mentoring other testers. Building helpers and Website for project metrics and
+                                    utilities.
                                 </p>
                             </li>
                             <li className="event" data-dates="Feb 2022 - Dec 2022">
