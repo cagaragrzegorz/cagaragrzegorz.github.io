@@ -8,12 +8,12 @@
 ## Content
 
 - About me
+- Experience
 - Contact
 
 ## More to come
 
-- Tech skils
-- Experience
+- Tech skills
 - Portfolio
 - Other/Links
 
