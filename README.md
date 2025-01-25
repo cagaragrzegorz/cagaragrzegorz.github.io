@@ -2,10 +2,8 @@
 
 ## My Personal page built with
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap ([link](https://getbootstrap.com/))
+- React + Bootstrap
+- TypeScript
 
 ## Content
 
@@ -14,10 +12,10 @@
 
 ## More to come
 
-- tech skils
-- experience
-- portfolio
-- other
+- Tech skils
+- Experience
+- Portfolio
+- Other/Links
 
 # create-react-app default content - Getting Started with Create React App
 
