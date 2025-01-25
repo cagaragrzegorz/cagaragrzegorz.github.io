@@ -9,6 +9,7 @@ import { Banner } from './components/Banner'
 import { AboutMe } from './components/AboutMe'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { Experience } from './components/Experience'
 
 function App() {
     return (
@@ -16,6 +17,8 @@ function App() {
             <Navigation />
             <Banner />
             <AboutMe />
+            <Experience />
+            {/*<Skills />*/}
             <Contact />
             <Footer />
 

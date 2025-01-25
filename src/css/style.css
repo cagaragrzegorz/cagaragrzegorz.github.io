@@ -107,7 +107,6 @@ body {
 }
 
 .cd-headline.clip .cd-words-wrapper::after {
-    /* line */
     content: '';
     position: absolute;
     top: 0;
@@ -164,7 +163,6 @@ img {
     position: relative;
     overflow: hidden;
     padding: 70px 0;
-    text-align: justify;
 }
 
 .section.wb {

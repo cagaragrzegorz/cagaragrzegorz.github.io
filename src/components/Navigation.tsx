@@ -20,6 +20,9 @@ export const Navigation: React.FC = () => {
                         <Nav.Link href="#about" data-id={'about'}>
                             ABOUT
                         </Nav.Link>
+                        <Nav.Link href="#experience" data-id={'experience'}>
+                            EXPERIENCE
+                        </Nav.Link>
                         <Nav.Link href="#contact" data-id={'contact'}>
                             CONTACT
                         </Nav.Link>
