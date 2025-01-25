@@ -1,47 +1,50 @@
 {
-  "name": "personal-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "bootstrap": "^5.3.3",
-    "cra-template-typescript": "1.2.0",
-    "jquery": "^3.7.1",
-    "react": "^19.0.0",
-    "react-bootstrap": "^2.10.8",
-    "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "BUILD_PATH='./docs' react-scripts build",
-    "test": "react-scripts test",
-    "serve": "serve -s docs"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/jquery": "^3.5.32",
-    "@types/node": "^22.10.10",
-    "@types/react-dom": "^19.0.3",
-    "typescript": "^5.7.3"
-  }
+    "name": "personal-react",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.7.2",
+        "@fortawesome/free-solid-svg-icons": "^6.7.2",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "bootstrap": "^5.3.3",
+        "cra-template-typescript": "1.2.0",
+        "jquery": "^3.7.1",
+        "react": "^19.0.0",
+        "react-bootstrap": "^2.10.8",
+        "react-dom": "^19.0.0",
+        "react-scripts": "^5.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "BUILD_PATH='./docs' react-scripts build",
+        "test": "react-scripts test",
+        "serve": "serve -s docs",
+        "format": "npx prettier . --write",
+        "check": "npx prettier . --check"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.5.32",
+        "@types/node": "^22.10.10",
+        "@types/react-dom": "^19.0.3",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3"
+    }
 }
