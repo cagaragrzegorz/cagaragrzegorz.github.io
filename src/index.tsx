@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
-import './scripts/custom.ts'
-import './scripts/banner.js'
+import './scripts/custom'
+import './scripts/banner'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
