@@ -13,7 +13,7 @@ export const Experience: React.FC = () => {
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting)
             },
-            { rootMargin: '-50px' }
+            { rootMargin: '-100px' }
         )
         observer.observe(refContainer.current!)
         return () => observer.disconnect()
