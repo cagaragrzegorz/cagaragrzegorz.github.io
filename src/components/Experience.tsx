@@ -1,17 +1,31 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import '../css/timeline.css'
 import Col from 'react-bootstrap/Col'
 
 export const Experience: React.FC = () => {
+    const [isIntersecting, setIsIntersecting] = useState(false)
+    const refContainer = useRef(null)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsIntersecting(entry.isIntersecting)
+            },
+            { rootMargin: '-50px' }
+        )
+        observer.observe(refContainer.current!)
+        return () => observer.disconnect()
+    }, [isIntersecting])
+
     return (
         <div id="experience" className="navSection section lb">
-            <Container>
+            <Container ref={refContainer}>
                 <Row>
                     <Col md={12}>
                         <h3>Experience</h3>
-                        <ul className="timeline">
+                        <ul className={isIntersecting ? 'timeline slide-in' : 'timeline'}>
                             <li className="event" data-dates="Jan 2023 - Present">
                                 <h3>Fedex Dataworks Poland</h3>
                                 <h6>Principal Quality Engineer</h6>
@@ -54,16 +68,6 @@ export const Experience: React.FC = () => {
                                     customer (on-site presentations). Test automation (CAPL, TCL, internal tools).
                                     Developing of utility apps for test automation (Java). Elements of microcontroller
                                     programing (C).
-                                </p>
-                            </li>
-                            <li className="event" data-dates="Aug 2011 - Mar 2013">
-                                <h3>EC Project Sp. z o.o.</h3>
-                                <h6>Automation / Vision Systems Engineer</h6>
-                                <p>
-                                    Selection of components and programming (Halcon, C# with integration of external
-                                    libraries) for vision systems purpose. Testing and implementation of prepared
-                                    solutions. Elements of project management including: customers consultation,
-                                    requirements update, preparation of the offer, and final results presentation.
                                 </p>
                             </li>
                         </ul>

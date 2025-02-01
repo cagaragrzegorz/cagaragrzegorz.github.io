@@ -11,6 +11,9 @@
     list-style: none;
     text-align: left;
     max-width: 40%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
 }
 
 @media (max-width: 767px) {
@@ -94,4 +97,9 @@
     .timeline .event:after {
         left: -31px;
     }
+}
+
+.slide-in {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
 }

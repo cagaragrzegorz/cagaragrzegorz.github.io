@@ -54,7 +54,7 @@ body {
     padding: 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
     .nav-link.active::after {
         width: 0%;
     }
