@@ -9,6 +9,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { Experience } from './components/Experience'
 import { ChevronUp } from 'lucide-react'
+import { Skills } from './components/Skills'
 
 function App() {
     return (
@@ -17,7 +18,7 @@ function App() {
             <Banner />
             <AboutMe />
             <Experience />
-            {/*<Skills />*/}
+            <Skills />
             <Contact />
             <Footer />
 

@@ -1,0 +1,31 @@
+.skill {
+    font-size: 17px;
+    padding-bottom: 1rem;
+}
+
+.progress {
+    padding-left: 0;
+}
+
+.progress-bar {
+    background-color: #787878;
+    transition: width 2s;
+}
+
+.col1, .col2 {
+    display: block;
+}
+
+.col3 {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .col1, .col2 {
+        display: none;
+    }
+
+    .col3 {
+        display: block;
+    }
+}

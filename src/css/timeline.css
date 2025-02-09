@@ -10,7 +10,7 @@
     padding: 50px;
     list-style: none;
     text-align: left;
-    max-width: 40%;
+    max-width: 60%;
     transform: translateX(100%);
     opacity: 0;
     transition: transform 1s, opacity 1s;

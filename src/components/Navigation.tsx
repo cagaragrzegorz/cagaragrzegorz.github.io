@@ -9,7 +9,7 @@ export const Navigation: React.FC = () => {
         <Navbar collapseOnSelect expand="lg" data-bs-theme="dark" style={{ backgroundColor: '#333333' }} fixed="top">
             <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ border: '0', boxShadow: 'none' }}>
-                    <Menu size={28} color={'white'}/>
+                    <Menu size={28} color={'white'} />
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
@@ -21,6 +21,9 @@ export const Navigation: React.FC = () => {
                         </Nav.Link>
                         <Nav.Link href="#experience" data-id={'experience'}>
                             EXPERIENCE
+                        </Nav.Link>
+                        <Nav.Link href="#skills" data-id={'skills'}>
+                            SKILLS
                         </Nav.Link>
                         <Nav.Link href="#contact" data-id={'contact'}>
                             CONTACT
